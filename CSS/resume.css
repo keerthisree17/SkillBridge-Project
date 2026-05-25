@@ -1,0 +1,270 @@
+/* NAVBAR */
+
+.custom-navbar{
+
+    background:#111827;
+
+    padding:18px 0;
+}
+
+.navbar-brand{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:white !important;
+}
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:15px;
+
+    transition:0.3s;
+}
+
+.nav-link:hover{
+
+    color:#22c55e !important;
+}
+
+.nav-link.active{
+
+    color:#22c55e !important;
+}
+body{
+
+    margin:0;
+    padding:0;
+
+    background:#0f172a;
+
+    font-family:Arial,sans-serif;
+}
+
+/* FORM */
+
+.form-section{
+
+    background:#0f172a;
+
+    min-height:100vh;
+
+    padding:40px;
+
+    color:white;
+}
+
+.builder-title{
+
+    font-size:50px;
+
+    font-weight:bold;
+
+    margin-bottom:30px;
+}
+
+/* CARD */
+
+.glass-card{
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    padding:35px;
+
+    border-radius:20px;
+}
+
+/* LABEL */
+
+.form-label{
+
+    font-weight:600;
+}
+
+/* STAR */
+
+.required{
+
+    color:#ef4444;
+}
+
+/* INPUT */
+
+.form-control{
+
+    background:#111827 !important;
+
+    border:none !important;
+
+    color:white !important;
+
+    padding:15px !important;
+
+    border-radius:12px !important;
+}
+
+/* PLACEHOLDER */
+
+.form-control::placeholder{
+
+    color:#9ca3af !important;
+}
+
+/* ERROR */
+
+.error-text{
+
+    color:#ef4444;
+
+    font-size:14px;
+}
+
+/* BUTTON */
+
+.btn-success{
+
+    background:#22c55e !important;
+
+    border:none !important;
+}
+
+/* PREVIEW */
+
+.preview-section{
+
+    background:#111827;
+
+    min-height:100vh;
+
+    padding:40px;
+}
+
+.resume-preview{
+
+    display:flex;
+
+    width:850px;
+
+    background:white;
+
+    margin:auto;
+
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+/* LEFT */
+
+.resume-left{
+
+    width:35%;
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:40px;
+
+    text-align:center;
+}
+
+/* IMAGE */
+
+.preview-img{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #22c55e;
+
+    margin-bottom:20px;
+}
+
+/* ROLE */
+
+.role-text{
+
+    color:#22c55e;
+
+    margin-bottom:40px;
+}
+
+/* CONTACT */
+
+.contact-box,
+.skills-box{
+
+    margin-top:40px;
+
+    text-align:left;
+}
+
+/* RIGHT */
+
+.resume-right{
+
+    width:65%;
+
+    padding:40px;
+}
+
+/* SECTION */
+
+.resume-section-box{
+
+    margin-bottom:40px;
+}
+
+.resume-section-box h2{
+
+    color:#22c55e;
+
+    margin-bottom:15px;
+
+    border-bottom:2px solid #e5e7eb;
+
+    padding-bottom:10px;
+}
+
+/* SKILLS */
+
+.skill-tag{
+
+    display:inline-block;
+
+    background:#22c55e;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    margin:5px;
+}
+
+/* PDF FIX */
+
+@media print{
+
+    body{
+
+        background:white;
+    }
+
+    .resume-preview{
+
+        box-shadow:none;
+    }
+}

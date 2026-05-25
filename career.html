@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Career Guidance | SkillBridge</title>
+
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="css/career.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+
+<div class="container">
+
+<a class="navbar-brand"
+href="index.html">
+
+SkillBridge
+
+</a>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div
+class="collapse navbar-collapse"
+id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="skills.html">Skills</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="jobs.html">Jobs</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="resume.html">Resume</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="career.html">
+Career Guidance
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero-section">
+
+<div class="container text-center">
+
+<h1 class="hero-title">
+Build Your Dream Career
+</h1>
+
+<p class="hero-text">
+
+Explore career roadmaps,
+salary insights and future tech opportunities.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- CAREERS -->
+
+<section class="career-section">
+
+<div class="container">
+
+<div class="row g-4">
+
+<!-- CARD START -->
+
+<div class="col-lg-4">
+
+<div class="career-card">
+
+<h2>Frontend Developer</h2>
+
+<p>
+Build modern websites and UI.
+</p>
+
+<h5>₹4 LPA - ₹12 LPA</h5>
+
+<button
+class="career-btn"
+onclick="toggleRoadmap('frontend')">
+
+Explore Roadmap
+
+</button>
+
+<div
+class="roadmap-dropdown"
+id="frontend">
+
+<ul>
+
+<li>Learn HTML</li>
+<li>Learn CSS</li>
+<li>Learn JavaScript</li>
+<li>Learn React.js</li>
+<li>Build Projects</li>
+<li>Create Portfolio</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- BACKEND -->
+
+<div class="col-lg-4">
+
+<div class="career-card">
+
+<h2>Backend Developer</h2>
+
+<p>
+Build servers and APIs.
+</p>
+
+<h5>₹5 LPA - ₹15 LPA</h5>
+
+<button
+class="career-btn"
+onclick="toggleRoadmap('backend')">
+
+Explore Roadmap
+
+</button>
+
+<div
+class="roadmap-dropdown"
+id="backend">
+
+<ul>
+
+<li>Learn Python or Node.js</li>
+<li>Learn Databases</li>
+<li>Learn APIs</li>
+<li>Authentication</li>
+<li>Deploy Servers</li>
+<li>Build Backend Projects</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FULL STACK -->
+
+<div class="col-lg-4">
+
+<div class="career-card">
+
+<h2>Full Stack Developer</h2>
+
+<p>
+Work on frontend and backend.
+</p>
+
+<h5>₹6 LPA - ₹18 LPA</h5>
+
+<button
+class="career-btn"
+onclick="toggleRoadmap('fullstack')">
+
+Explore Roadmap
+
+</button>
+
+<div
+class="roadmap-dropdown"
+id="fullstack">
+
+<ul>
+
+<li>Frontend Basics</li>
+<li>Backend Basics</li>
+<li>Databases</li>
+<li>React + Node.js</li>
+<li>Deploy Full Projects</li>
+<li>GitHub Portfolio</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CYBER -->
+
+<div class="col-lg-4">
+
+<div class="career-card">
+
+<h2>Cybersecurity Analyst</h2>
+
+<p>
+Protect systems from attacks.
+</p>
+
+<h5>₹5 LPA - ₹15 LPA</h5>
+
+<button
+class="career-btn"
+onclick="toggleRoadmap('cyber')">
+
+Explore Roadmap
+
+</button>
+
+<div
+class="roadmap-dropdown"
+id="cyber">
+
+<ul>
+
+<li>Networking</li>
+<li>Linux</li>
+<li>Ethical Hacking</li>
+<li>Kali Linux</li>
+<li>Security Tools</li>
+<li>Certifications</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- DATA -->
+
+<div class="col-lg-4">
+
+<div class="career-card">
+
+<h2>Data Analyst</h2>
+
+<p>
+Analyze business data.
+</p>
+
+<h5>₹4 LPA - ₹10 LPA</h5>
+
+<button
+class="career-btn"
+onclick="toggleRoadmap('data')">
+
+Explore Roadmap
+
+</button>
+
+<div
+class="roadmap-dropdown"
+id="data">
+
+<ul>
+
+<li>Excel</li>
+<li>SQL</li>
+<li>Python</li>
+<li>Power BI</li>
+<li>Visualization</li>
+<li>Real Datasets</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- AI -->
+
+<div class="col-lg-4">
+
+<div class="career-card">
+
+<h2>AI Engineer</h2>
+
+<p>
+Build intelligent AI systems.
+</p>
+
+<h5>₹8 LPA - ₹25 LPA</h5>
+
+<button
+class="career-btn"
+onclick="toggleRoadmap('ai')">
+
+Explore Roadmap
+
+</button>
+
+<div
+class="roadmap-dropdown"
+id="ai">
+
+<ul>
+
+<li>Python</li>
+<li>Machine Learning</li>
+<li>Deep Learning</li>
+<li>TensorFlow</li>
+<li>AI Projects</li>
+<li>Model Deployment</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- CLOUD -->
+
+<div class="col-lg-4">
+
+<div class="career-card">
+
+<h2>Cloud Engineer</h2>
+
+<p>
+Manage cloud infrastructure.
+</p>
+
+<h5>₹6 LPA - ₹20 LPA</h5>
+
+<button
+class="career-btn"
+onclick="toggleRoadmap('cloud')">
+
+Explore Roadmap
+
+</button>
+
+<div
+class="roadmap-dropdown"
+id="cloud">
+
+<ul>
+
+<li>AWS Basics</li>
+<li>Azure</li>
+<li>Docker</li>
+<li>Kubernetes</li>
+<li>Cloud Deployment</li>
+<li>DevOps Basics</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- UI UX -->
+
+<div class="col-lg-4">
+
+<div class="career-card">
+
+<h2>UI/UX Designer</h2>
+
+<p>
+Design modern digital experiences.
+</p>
+
+<h5>₹4 LPA - ₹12 LPA</h5>
+
+<button
+class="career-btn"
+onclick="toggleRoadmap('design')">
+
+Explore Roadmap
+
+</button>
+
+<div
+class="roadmap-dropdown"
+id="design">
+
+<ul>
+
+<li>Learn Figma</li>
+<li>User Research</li>
+<li>Wireframes</li>
+<li>Prototypes</li>
+<li>UI Design</li>
+<li>Portfolio</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- APP -->
+
+<div class="col-lg-4">
+
+<div class="career-card">
+
+<h2>App Developer</h2>
+
+<p>
+Build Android and iOS apps.
+</p>
+
+<h5>₹5 LPA - ₹15 LPA</h5>
+
+<button
+class="career-btn"
+onclick="toggleRoadmap('app')">
+
+Explore Roadmap
+
+</button>
+
+<div
+class="roadmap-dropdown"
+id="app">
+
+<ul>
+
+<li>Java/Kotlin</li>
+<li>Flutter</li>
+<li>React Native</li>
+<li>Firebase</li>
+<li>App Projects</li>
+<li>Publish Apps</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- DEVOPS -->
+
+<div class="col-lg-4">
+
+<div class="career-card">
+
+<h2>DevOps Engineer</h2>
+
+<p>
+Automate software deployment.
+</p>
+
+<h5>₹7 LPA - ₹22 LPA</h5>
+
+<button
+class="career-btn"
+onclick="toggleRoadmap('devops')">
+
+Explore Roadmap
+
+</button>
+
+<div
+class="roadmap-dropdown"
+id="devops">
+
+<ul>
+
+<li>Linux</li>
+<li>Docker</li>
+<li>Kubernetes</li>
+<li>CI/CD</li>
+<li>AWS</li>
+<li>Automation Tools</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- AI RECOMMENDATION -->
+
+<section class="ai-section">
+
+<div class="container">
+
+<h1 class="section-title">
+AI Career Recommendation
+</h1>
+
+<div class="ai-box">
+
+<select
+id="interest"
+class="form-select">
+
+<option value="">
+Select Your Interest
+</option>
+
+<option value="coding">
+Coding & Development
+</option>
+
+<option value="security">
+Cybersecurity
+</option>
+
+<option value="data">
+Data Science
+</option>
+
+<option value="design">
+UI/UX Design
+</option>
+
+<option value="ai">
+Artificial Intelligence
+</option>
+
+<option value="cloud">
+Cloud Computing
+</option>
+
+</select>
+
+<button
+class="ai-btn"
+onclick="getCareerSuggestion()">
+
+Get Recommendation
+
+</button>
+
+<div
+class="suggestion-box"
+id="suggestionBox">
+
+Your recommendation appears here.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<script src="js/career.js"></script>
+
+</body>
+</html>
