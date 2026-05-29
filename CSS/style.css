@@ -1,4 +1,6 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 
 *{
     margin:0;
@@ -19,7 +21,9 @@ body{
 
 
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 .custom-navbar{
 
@@ -27,7 +31,7 @@ body{
 
     padding:15px 0;
 
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 15px rgba(0,0,0,0.1);
 
     z-index:9999;
 }
@@ -57,6 +61,11 @@ body{
     color:#22c55e !important;
 }
 
+.nav-link.active{
+
+    color:#22c55e !important;
+}
+
 .navbar-toggler{
 
     border:2px solid #0f172a !important;
@@ -76,7 +85,9 @@ body{
 
 
 
-/* MOBILE NAVBAR */
+/* =========================
+   MOBILE NAVBAR
+========================= */
 
 @media(max-width:992px){
 
@@ -99,23 +110,22 @@ body{
     .nav-link{
 
         margin:12px 0;
-
-        color:#0f172a !important;
     }
 }
 
 
 
-/* HERO SECTIONS */
+/* =========================
+   HERO SECTIONS
+========================= */
 
-.hero,
 .hero-section,
 .skills-hero,
 .about-hero,
 .jobs-hero,
 .hustle-hero{
 
-    min-height:40vh;
+    min-height:55vh;
 
     display:flex;
 
@@ -125,9 +135,19 @@ body{
 
     text-align:center;
 
-    padding:80px 20px;
+    padding:120px 20px;
 
-    background:#0b1120;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400');
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
 }
 
 .hero-title{
@@ -148,7 +168,9 @@ body{
 
 
 
-/* GENERAL SECTIONS */
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 .skills-section,
 .about-section,
@@ -158,14 +180,16 @@ body{
 .resume-section,
 .career-section,
 .ai-section,
-.faq-section{
+.search-section{
 
-    padding:60px 20px;
+    padding:70px 20px;
 }
 
 
 
-/* CARD STYLES */
+/* =========================
+   CARDS
+========================= */
 
 .skill-card,
 .job-card,
@@ -175,7 +199,8 @@ body{
 .form-card,
 .faq-card,
 .vision-card,
-.objective-box{
+.objective-box,
+.glass-card{
 
     background:#111827;
 
@@ -184,6 +209,8 @@ body{
     padding:30px;
 
     transition:0.3s;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
 }
 
 .skill-card:hover,
@@ -191,25 +218,44 @@ body{
 .hustle-card:hover,
 .career-card:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-8px);
 }
 
 
 
-/* BUTTONS */
+/* =========================
+   ICONS
+========================= */
+
+.icon,
+.job-icon,
+.hustle-icon{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+    color:#22c55e;
+}
+
+
+
+/* =========================
+   BUTTONS
+========================= */
 
 .btn-success,
 .send-btn,
 .ai-btn,
 .career-btn{
 
-    background:#22c55e;
+    background:#22c55e !important;
 
-    border:none;
+    border:none !important;
 
-    color:white;
+    color:white !important;
 
-    padding:14px 20px;
+    padding:14px 22px;
 
     border-radius:12px;
 
@@ -223,12 +269,16 @@ body{
 .ai-btn:hover,
 .career-btn:hover{
 
-    background:#16a34a;
+    background:#16a34a !important;
+
+    transform:scale(1.03);
 }
 
 
 
-/* FORMS */
+/* =========================
+   FORMS
+========================= */
 
 .form-control,
 .form-select{
@@ -251,31 +301,76 @@ body{
 
 
 
-/* SUCCESS */
+/* =========================
+   SEARCH BOX
+========================= */
 
-.success-box{
+.search-box{
+
+    max-width:700px;
+
+    margin:auto;
+}
+
+
+
+/* =========================
+   ROADMAP
+========================= */
+
+.roadmap-dropdown{
 
     display:none;
 
-    background:#22c55e;
-
     margin-top:20px;
 
-    padding:15px;
+    background:#1f2937;
 
-    border-radius:12px;
+    padding:20px;
 
-    text-align:center;
+    border-radius:15px;
+}
+
+.roadmap-dropdown ul{
+
+    padding-left:20px;
 }
 
 
 
-/* SKILLS PAGE */
+/* =========================
+   AI BOX
+========================= */
 
-.skills-hero{
+.ai-box{
 
-    padding:60px 20px 30px;
+    max-width:700px;
+
+    margin:auto;
+
+    background:#111827;
+
+    padding:40px;
+
+    border-radius:20px;
 }
+
+.suggestion-box{
+
+    margin-top:30px;
+
+    background:#1f2937;
+
+    padding:25px;
+
+    border-radius:15px;
+}
+
+
+
+/* =========================
+   SKILLS PAGE
+========================= */
 
 .video-card{
 
@@ -296,10 +391,6 @@ body{
     padding:25px;
 }
 
-
-
-/* VIDEO IMAGE */
-
 .video-thumbnail{
 
     width:420px;
@@ -318,15 +409,9 @@ body{
     border-radius:15px;
 }
 
-
-
-/* VIDEO TEXT */
-
 .video-info{
 
     flex:1;
-
-    color:white;
 }
 
 .video-info h2{
@@ -347,18 +432,51 @@ body{
     margin-bottom:25px;
 }
 
-.video-info .btn{
 
-    padding:14px 25px;
 
-    border-radius:12px;
+/* =========================
+   JOB TAGS
+========================= */
 
-    font-size:18px;
+.job-tags span{
+
+    display:inline-block;
+
+    background:#22c55e;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    margin:5px;
+
+    font-size:14px;
 }
 
 
 
-/* RESUME */
+/* =========================
+   RESUME BUILDER
+========================= */
+
+.form-section{
+
+    padding:40px;
+}
+
+.preview-section{
+
+    padding:40px;
+}
+
+.builder-title{
+
+    margin-bottom:30px;
+
+    font-size:42px;
+
+    font-weight:bold;
+}
 
 .resume-preview{
 
@@ -372,9 +490,9 @@ body{
 
     overflow:hidden;
 
-    width:850px;
+    width:100%;
 
-    margin:auto;
+    min-height:1000px;
 }
 
 .resume-left{
@@ -412,23 +530,76 @@ body{
     margin-bottom:20px;
 }
 
+.role-text{
 
+    color:#d1d5db;
 
-/* FOOTER */
+    margin-bottom:30px;
+}
 
-.footer,
-footer{
+.resume-section-box{
 
-    background:#111827;
+    margin-bottom:40px;
+}
 
-    text-align:center;
+.skill-tag{
 
-    padding:30px;
+    display:inline-block;
+
+    background:#22c55e;
+
+    color:white;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    margin:5px;
 }
 
 
 
-/* MOBILE */
+/* =========================
+   SUCCESS BOX
+========================= */
+
+.success-box{
+
+    display:none;
+
+    background:#22c55e;
+
+    margin-top:20px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    text-align:center;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    background:#111827;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    margin-top:50px;
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:992px){
 
@@ -447,16 +618,9 @@ footer{
         height:auto;
     }
 
-    .video-info h2{
-
-        font-size:30px;
-    }
-
     .resume-preview{
 
         flex-direction:column;
-
-        width:100%;
     }
 
     .resume-left,
@@ -488,5 +652,10 @@ footer{
     .video-info p{
 
         font-size:16px;
+    }
+
+    .builder-title{
+
+        font-size:34px;
     }
 }

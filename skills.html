@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,7 +39,8 @@ href="css/style.css">
 
 <div class="container">
 
-<a class="navbar-brand"
+<a
+class="navbar-brand fw-bold"
 href="index.html">
 
 SkillBridge
@@ -49,7 +51,10 @@ SkillBridge
 class="navbar-toggler"
 type="button"
 data-bs-toggle="collapse"
-data-bs-target="#navbarNav">
+data-bs-target="#navbarNav"
+aria-controls="navbarNav"
+aria-expanded="false"
+aria-label="Toggle navigation">
 
 <span class="navbar-toggler-icon"></span>
 
@@ -62,74 +67,50 @@ id="navbarNav">
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item">
-<a class="nav-link"
-href="index.html">
-
+<a class="nav-link" href="index.html">
 Home
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="about.html">
-
+<a class="nav-link" href="about.html">
 About
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link active"
-href="skills.html">
-
+<a class="nav-link active" href="skills.html">
 Skills
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="jobs.html">
-
+<a class="nav-link" href="jobs.html">
 Jobs
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="hustles.html">
-
+<a class="nav-link" href="hustles.html">
 Side Hustles
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="resume.html">
-
+<a class="nav-link" href="resume.html">
 Resume Builder
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="career.html">
-
+<a class="nav-link" href="career.html">
 Career Guidance
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="contact.html">
-
+<a class="nav-link" href="contact.html">
 Contact
-
 </a>
 </li>
 
@@ -141,35 +122,35 @@ Contact
 
 </nav>
 
-<!-- SPACE -->
+<!-- NAVBAR SPACE -->
 
-<div style="height:120px;"></div>
+<div style="height:90px;"></div>
 
 <!-- HERO -->
 
 <section class="skills-hero">
 
-<div class="container text-center">
+<div class="container text-center text-white">
 
-<h1 class="display-4 fw-bold text-white">
+<h1 class="display-4 fw-bold">
 Top Skill Learning Videos
 </h1>
 
-<p class="lead text-light mt-3">
-Learn modern skills and grow your career
+<p class="lead mt-3">
+Learn modern tech skills and grow your career
 </p>
 
 </div>
 
 </section>
 
-<!-- VIDEOS -->
+<!-- SKILLS SECTION -->
 
 <section class="skills-section">
 
 <div class="container">
 
-<!-- VIDEO 1 -->
+<!-- HTML -->
 
 <div class="video-card">
 
@@ -183,10 +164,12 @@ alt="HTML Course">
 
 <div class="video-info">
 
-<h2>HTML Full Course</h2>
+<h2>
+HTML Full Course
+</h2>
 
 <p>
-Learn HTML from scratch and build modern responsive websites for beginners.
+Learn HTML from scratch and build responsive websites for beginners.
 </p>
 
 <a
@@ -202,7 +185,7 @@ Watch Tutorial
 
 </div>
 
-<!-- VIDEO 2 -->
+<!-- CSS -->
 
 <div class="video-card">
 
@@ -216,10 +199,12 @@ alt="CSS Course">
 
 <div class="video-info">
 
-<h2>CSS Masterclass</h2>
+<h2>
+CSS Masterclass
+</h2>
 
 <p>
-Master responsive layouts, animations and professional UI design.
+Master layouts, animations and professional web design techniques.
 </p>
 
 <a
@@ -235,7 +220,7 @@ Watch Tutorial
 
 </div>
 
-<!-- VIDEO 3 -->
+<!-- JAVASCRIPT -->
 
 <div class="video-card">
 
@@ -249,10 +234,12 @@ alt="JavaScript Course">
 
 <div class="video-info">
 
-<h2>JavaScript Full Course</h2>
+<h2>
+JavaScript Full Course
+</h2>
 
 <p>
-Learn JavaScript and build interactive modern web applications.
+Learn JavaScript and build interactive web applications.
 </p>
 
 <a
@@ -268,7 +255,7 @@ Watch Tutorial
 
 </div>
 
-<!-- VIDEO 4 -->
+<!-- PYTHON -->
 
 <div class="video-card">
 
@@ -282,7 +269,9 @@ alt="Python Course">
 
 <div class="video-info">
 
-<h2>Python Full Course</h2>
+<h2>
+Python Full Course
+</h2>
 
 <p>
 Learn Python programming for AI, automation and backend development.
@@ -290,6 +279,76 @@ Learn Python programming for AI, automation and backend development.
 
 <a
 href="https://youtu.be/_uQrJ0TkZlc"
+target="_blank"
+class="btn btn-success">
+
+Watch Tutorial
+
+</a>
+
+</div>
+
+</div>
+
+<!-- REACT -->
+
+<div class="video-card">
+
+<div class="video-thumbnail">
+
+<img
+src="https://img.youtube.com/vi/bMknfKXIFA8/maxresdefault.jpg"
+alt="React Course">
+
+</div>
+
+<div class="video-info">
+
+<h2>
+React JS Course
+</h2>
+
+<p>
+Build modern frontend applications using React.js.
+</p>
+
+<a
+href="https://youtu.be/bMknfKXIFA8"
+target="_blank"
+class="btn btn-success">
+
+Watch Tutorial
+
+</a>
+
+</div>
+
+</div>
+
+<!-- CYBER SECURITY -->
+
+<div class="video-card">
+
+<div class="video-thumbnail">
+
+<img
+src="https://img.youtube.com/vi/inWWhr5tnEA/maxresdefault.jpg"
+alt="Cyber Security">
+
+</div>
+
+<div class="video-info">
+
+<h2>
+Cyber Security Basics
+</h2>
+
+<p>
+Learn ethical hacking, networking and cybersecurity fundamentals.
+</p>
+
+<a
+href="https://youtu.be/inWWhr5tnEA"
 target="_blank"
 class="btn btn-success">
 
@@ -311,7 +370,9 @@ Watch Tutorial
 
 <div class="container text-center">
 
-<h4>SkillBridge</h4>
+<h4>
+SkillBridge
+</h4>
 
 <p>
 Building Skills for a Better Future
@@ -332,4 +393,6 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.j
 <script src="js/script.js"></script>
 
 </body>
+
 </html>
+```

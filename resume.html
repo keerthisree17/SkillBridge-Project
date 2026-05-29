@@ -8,29 +8,32 @@
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>Professional Resume Builder</title>
+<title>Professional Resume Builder | SkillBridge</title>
+
+<!-- Bootstrap -->
 
 <link
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
+<!-- CSS -->
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
 </head>
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
+
 <body>
 
-<div class="container-fluid">
-  
-    ```html id="n8w4pc"
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
 
 <div class="container">
 
-<a class="navbar-brand"
+<a
+class="navbar-brand fw-bold"
 href="index.html">
 
 SkillBridge
@@ -57,74 +60,50 @@ id="navbarNav">
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item">
-<a class="nav-link"
-href="index.html">
-
+<a class="nav-link" href="index.html">
 Home
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="about.html">
-
+<a class="nav-link" href="about.html">
 About
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="skills.html">
-
+<a class="nav-link" href="skills.html">
 Skills
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="jobs.html">
-
+<a class="nav-link" href="jobs.html">
 Jobs
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="hustles.html">
-
+<a class="nav-link" href="hustles.html">
 Side Hustles
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="resume.html">
-
+<a class="nav-link active" href="resume.html">
 Resume Builder
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="career.html">
-
+<a class="nav-link" href="career.html">
 Career Guidance
-
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link"
-href="contact.html">
-
+<a class="nav-link" href="contact.html">
 Contact
-
 </a>
 </li>
 
@@ -140,10 +119,11 @@ Contact
 
 <div style="height:90px;"></div>
 
-<div style="height:90px;"></div>
+<div class="container-fluid">
+
 <div class="row">
 
-<!-- FORM -->
+<!-- FORM SECTION -->
 
 <div class="col-lg-4 form-section">
 
@@ -156,7 +136,7 @@ Resume Builder
 <!-- NAME -->
 
 <label class="form-label">
-Full Name <span class="required">*</span>
+Full Name
 </label>
 
 <input
@@ -165,14 +145,10 @@ id="name"
 class="form-control"
 placeholder="Enter full name">
 
-<small
-class="error-text"
-id="nameError"></small>
-
 <!-- ROLE -->
 
 <label class="form-label mt-3">
-Professional Role <span class="required">*</span>
+Professional Role
 </label>
 
 <input
@@ -181,14 +157,10 @@ id="role"
 class="form-control"
 placeholder="Frontend Developer">
 
-<small
-class="error-text"
-id="roleError"></small>
-
 <!-- EMAIL -->
 
 <label class="form-label mt-3">
-Email Address <span class="required">*</span>
+Email Address
 </label>
 
 <input
@@ -197,14 +169,10 @@ id="email"
 class="form-control"
 placeholder="example@gmail.com">
 
-<small
-class="error-text"
-id="emailError"></small>
-
 <!-- PHONE -->
 
 <label class="form-label mt-3">
-Phone Number <span class="required">*</span>
+Phone Number
 </label>
 
 <input
@@ -213,14 +181,10 @@ id="phone"
 class="form-control"
 placeholder="+91 9876543210">
 
-<small
-class="error-text"
-id="phoneError"></small>
-
 <!-- LOCATION -->
 
 <label class="form-label mt-3">
-Location <span class="required">*</span>
+Location
 </label>
 
 <input
@@ -229,44 +193,23 @@ id="location"
 class="form-control"
 placeholder="Visakhapatnam">
 
-<small
-class="error-text"
-id="locationError"></small>
-
 <!-- SUMMARY -->
 
 <label class="form-label mt-3">
-Professional Summary <span class="required">*</span>
+Professional Summary
 </label>
 
 <textarea
 id="about"
 class="form-control"
 rows="5"
-maxlength="300"
-placeholder="Write minimum 100 characters">
+placeholder="Write your professional summary">
 </textarea>
-
-<div class="d-flex justify-content-between">
-
-<small>
-Minimum 100 characters
-</small>
-
-<small id="charCount">
-0 / 300
-</small>
-
-</div>
-
-<small
-class="error-text"
-id="aboutError"></small>
 
 <!-- EDUCATION -->
 
 <label class="form-label mt-3">
-Education <span class="required">*</span>
+Education
 </label>
 
 <textarea
@@ -275,10 +218,6 @@ class="form-control"
 rows="4"
 placeholder="Diploma in Computer Science Engineering">
 </textarea>
-
-<small
-class="error-text"
-id="educationError"></small>
 
 <!-- EXPERIENCE -->
 
@@ -290,13 +229,13 @@ Experience
 id="experience"
 class="form-control"
 rows="3"
-placeholder="Optional">
+placeholder="Frontend Developer Intern">
 </textarea>
 
 <!-- PROJECTS -->
 
 <label class="form-label mt-3">
-Projects <span class="required">*</span>
+Projects
 </label>
 
 <textarea
@@ -306,14 +245,10 @@ rows="4"
 placeholder="SkillBridge Platform">
 </textarea>
 
-<small
-class="error-text"
-id="projectsError"></small>
-
 <!-- SKILLS -->
 
 <label class="form-label mt-3">
-Skills <span class="required">*</span>
+Skills
 </label>
 
 <input
@@ -322,11 +257,7 @@ id="skills"
 class="form-control"
 placeholder="HTML, CSS, JavaScript">
 
-<small
-class="error-text"
-id="skillsError"></small>
-
-<!-- PHOTO -->
+<!-- IMAGE -->
 
 <label class="form-label mt-4">
 Profile Photo
@@ -359,7 +290,7 @@ Download PDF
 
 </div>
 
-<!-- PREVIEW -->
+<!-- PREVIEW SECTION -->
 
 <div class="col-lg-8 preview-section">
 
@@ -367,20 +298,22 @@ Download PDF
 class="resume-preview"
 id="resumePreview">
 
-<!-- LEFT -->
+<!-- LEFT SIDE -->
 
 <div class="resume-left">
 
 <img
 src="https://i.pravatar.cc/150"
 id="previewImage"
-class="preview-img">
+class="preview-img"
+alt="Profile Image">
 
 <h2 id="previewName">
 Your Name
 </h2>
 
-<p class="role-text"
+<p
+class="role-text"
 id="previewRole">
 
 Frontend Developer
@@ -405,13 +338,13 @@ Contact
 Skills
 </h3>
 
-<div id="previewSkills"></div>
+<p id="previewSkills"></p>
 
 </div>
 
 </div>
 
-<!-- RIGHT -->
+<!-- RIGHT SIDE -->
 
 <div class="resume-right">
 
@@ -465,10 +398,22 @@ Projects
 
 </div>
 
+<!-- Bootstrap JS -->
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- PDF -->
+
 <script
 src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js">
 </script>
+
+<!-- JS -->
+
 <script src="js/script.js"></script>
 
 </body>
+
 </html>
