@@ -141,8 +141,7 @@ body{
     rgba(0,0,0,0.65)
     ),
 
-    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600");
-
+url("../images/hero-bg.jpg");
     background-size:cover;
 
     background-position:center;
