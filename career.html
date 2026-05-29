@@ -10,21 +10,25 @@ content="width=device-width, initial-scale=1.0">
 
 <title>Career Guidance | SkillBridge</title>
 
+<!-- BOOTSTRAP -->
+
 <link
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 rel="stylesheet">
 
+<!-- CSS -->
+
 <link
 rel="stylesheet"
-href="css/career.css">
+href="css/style.css">
 
 </head>
 
 <body>
-
+```html id="n8w4pc"
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
 
 <div class="container">
 
@@ -39,7 +43,10 @@ SkillBridge
 class="navbar-toggler"
 type="button"
 data-bs-toggle="collapse"
-data-bs-target="#navbarNav">
+data-bs-target="#navbarNav"
+aria-controls="navbarNav"
+aria-expanded="false"
+aria-label="Toggle navigation">
 
 <span class="navbar-toggler-icon"></span>
 
@@ -52,29 +59,75 @@ id="navbarNav">
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
+<a class="nav-link"
+href="index.html">
 
-<li class="nav-item">
-<a class="nav-link" href="skills.html">Skills</a>
-</li>
+Home
 
-<li class="nav-item">
-<a class="nav-link" href="jobs.html">Jobs</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="resume.html">Resume</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link active" href="career.html">
-Career Guidance
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
+<a class="nav-link"
+href="about.html">
+
+About
+
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="skills.html">
+
+Skills
+
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="jobs.html">
+
+Jobs
+
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="hustles.html">
+
+Side Hustles
+
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="resume.html">
+
+Resume Builder
+
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="career.html">
+
+Career Guidance
+
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="contact.html">
+
+Contact
+
+</a>
 </li>
 
 </ul>
@@ -84,6 +137,16 @@ Career Guidance
 </div>
 
 </nav>
+
+<!-- NAVBAR SPACE -->
+
+<div style="height:90px;"></div>
+```
+
+
+<!-- NAVBAR SPACING -->
+
+<div style="height:90px;"></div>
 
 <!-- HERO -->
 
@@ -106,7 +169,7 @@ salary insights and future tech opportunities.
 
 </section>
 
-<!-- CAREERS -->
+<!-- CAREER SECTION -->
 
 <section class="career-section">
 
@@ -114,16 +177,16 @@ salary insights and future tech opportunities.
 
 <div class="row g-4">
 
-<!-- CARD START -->
+<!-- FRONTEND -->
 
-<div class="col-lg-4">
+<div class="col-lg-4 col-md-6">
 
 <div class="career-card">
 
 <h2>Frontend Developer</h2>
 
 <p>
-Build modern websites and UI.
+Build modern websites and user interfaces.
 </p>
 
 <h5>₹4 LPA - ₹12 LPA</h5>
@@ -159,14 +222,14 @@ id="frontend">
 
 <!-- BACKEND -->
 
-<div class="col-lg-4">
+<div class="col-lg-4 col-md-6">
 
 <div class="career-card">
 
 <h2>Backend Developer</h2>
 
 <p>
-Build servers and APIs.
+Develop APIs and server-side applications.
 </p>
 
 <h5>₹5 LPA - ₹15 LPA</h5>
@@ -185,12 +248,12 @@ id="backend">
 
 <ul>
 
-<li>Learn Python or Node.js</li>
+<li>Learn Node.js</li>
 <li>Learn Databases</li>
-<li>Learn APIs</li>
+<li>REST APIs</li>
 <li>Authentication</li>
-<li>Deploy Servers</li>
-<li>Build Backend Projects</li>
+<li>Cloud Deployment</li>
+<li>Backend Projects</li>
 
 </ul>
 
@@ -202,14 +265,14 @@ id="backend">
 
 <!-- FULL STACK -->
 
-<div class="col-lg-4">
+<div class="col-lg-4 col-md-6">
 
 <div class="career-card">
 
 <h2>Full Stack Developer</h2>
 
 <p>
-Work on frontend and backend.
+Build complete web applications.
 </p>
 
 <h5>₹6 LPA - ₹18 LPA</h5>
@@ -232,7 +295,7 @@ id="fullstack">
 <li>Backend Basics</li>
 <li>Databases</li>
 <li>React + Node.js</li>
-<li>Deploy Full Projects</li>
+<li>Deploy Projects</li>
 <li>GitHub Portfolio</li>
 
 </ul>
@@ -245,14 +308,14 @@ id="fullstack">
 
 <!-- CYBER -->
 
-<div class="col-lg-4">
+<div class="col-lg-4 col-md-6">
 
 <div class="career-card">
 
 <h2>Cybersecurity Analyst</h2>
 
 <p>
-Protect systems from attacks.
+Protect systems and networks from cyber attacks.
 </p>
 
 <h5>₹5 LPA - ₹15 LPA</h5>
@@ -276,7 +339,7 @@ id="cyber">
 <li>Ethical Hacking</li>
 <li>Kali Linux</li>
 <li>Security Tools</li>
-<li>Certifications</li>
+<li>Cyber Certifications</li>
 
 </ul>
 
@@ -288,14 +351,14 @@ id="cyber">
 
 <!-- DATA -->
 
-<div class="col-lg-4">
+<div class="col-lg-4 col-md-6">
 
 <div class="career-card">
 
 <h2>Data Analyst</h2>
 
 <p>
-Analyze business data.
+Analyze business and technical data.
 </p>
 
 <h5>₹4 LPA - ₹10 LPA</h5>
@@ -318,8 +381,8 @@ id="data">
 <li>SQL</li>
 <li>Python</li>
 <li>Power BI</li>
-<li>Visualization</li>
-<li>Real Datasets</li>
+<li>Data Visualization</li>
+<li>Analytics Projects</li>
 
 </ul>
 
@@ -331,14 +394,14 @@ id="data">
 
 <!-- AI -->
 
-<div class="col-lg-4">
+<div class="col-lg-4 col-md-6">
 
 <div class="career-card">
 
 <h2>AI Engineer</h2>
 
 <p>
-Build intelligent AI systems.
+Develop AI and machine learning systems.
 </p>
 
 <h5>₹8 LPA - ₹25 LPA</h5>
@@ -363,178 +426,6 @@ id="ai">
 <li>TensorFlow</li>
 <li>AI Projects</li>
 <li>Model Deployment</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- CLOUD -->
-
-<div class="col-lg-4">
-
-<div class="career-card">
-
-<h2>Cloud Engineer</h2>
-
-<p>
-Manage cloud infrastructure.
-</p>
-
-<h5>₹6 LPA - ₹20 LPA</h5>
-
-<button
-class="career-btn"
-onclick="toggleRoadmap('cloud')">
-
-Explore Roadmap
-
-</button>
-
-<div
-class="roadmap-dropdown"
-id="cloud">
-
-<ul>
-
-<li>AWS Basics</li>
-<li>Azure</li>
-<li>Docker</li>
-<li>Kubernetes</li>
-<li>Cloud Deployment</li>
-<li>DevOps Basics</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- UI UX -->
-
-<div class="col-lg-4">
-
-<div class="career-card">
-
-<h2>UI/UX Designer</h2>
-
-<p>
-Design modern digital experiences.
-</p>
-
-<h5>₹4 LPA - ₹12 LPA</h5>
-
-<button
-class="career-btn"
-onclick="toggleRoadmap('design')">
-
-Explore Roadmap
-
-</button>
-
-<div
-class="roadmap-dropdown"
-id="design">
-
-<ul>
-
-<li>Learn Figma</li>
-<li>User Research</li>
-<li>Wireframes</li>
-<li>Prototypes</li>
-<li>UI Design</li>
-<li>Portfolio</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- APP -->
-
-<div class="col-lg-4">
-
-<div class="career-card">
-
-<h2>App Developer</h2>
-
-<p>
-Build Android and iOS apps.
-</p>
-
-<h5>₹5 LPA - ₹15 LPA</h5>
-
-<button
-class="career-btn"
-onclick="toggleRoadmap('app')">
-
-Explore Roadmap
-
-</button>
-
-<div
-class="roadmap-dropdown"
-id="app">
-
-<ul>
-
-<li>Java/Kotlin</li>
-<li>Flutter</li>
-<li>React Native</li>
-<li>Firebase</li>
-<li>App Projects</li>
-<li>Publish Apps</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- DEVOPS -->
-
-<div class="col-lg-4">
-
-<div class="career-card">
-
-<h2>DevOps Engineer</h2>
-
-<p>
-Automate software deployment.
-</p>
-
-<h5>₹7 LPA - ₹22 LPA</h5>
-
-<button
-class="career-btn"
-onclick="toggleRoadmap('devops')">
-
-Explore Roadmap
-
-</button>
-
-<div
-class="roadmap-dropdown"
-id="devops">
-
-<ul>
-
-<li>Linux</li>
-<li>Docker</li>
-<li>Kubernetes</li>
-<li>CI/CD</li>
-<li>AWS</li>
-<li>Automation Tools</li>
 
 </ul>
 
@@ -618,11 +509,32 @@ Your recommendation appears here.
 
 </section>
 
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="container text-center">
+
+<h4>SkillBridge</h4>
+
+<p>
+Build Skills • Explore Careers • Grow Professionally
+</p>
+
+</div>
+
+</footer>
+
+<!-- BOOTSTRAP JS -->
+
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
+<script src="js/script.js"></script>
 
-<script src="js/career.js"></script>
+<!-- CUSTOM JS -->
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

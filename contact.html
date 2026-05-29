@@ -14,17 +14,15 @@ content="width=device-width, initial-scale=1.0">
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 rel="stylesheet">
 
-<link
-rel="stylesheet"
-href="css/contact.css">
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-
+```html id="n8w4pc"
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
 
 <div class="container">
 
@@ -39,7 +37,10 @@ SkillBridge
 class="navbar-toggler"
 type="button"
 data-bs-toggle="collapse"
-data-bs-target="#navbarNav">
+data-bs-target="#navbarNav"
+aria-controls="navbarNav"
+aria-expanded="false"
+aria-label="Toggle navigation">
 
 <span class="navbar-toggler-icon"></span>
 
@@ -52,37 +53,70 @@ id="navbarNav">
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item">
-<a class="nav-link" href="index.html">
+<a class="nav-link"
+href="index.html">
+
 Home
+
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="skills.html">
+<a class="nav-link"
+href="about.html">
+
+About
+
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="skills.html">
+
 Skills
+
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="jobs.html">
+<a class="nav-link"
+href="jobs.html">
+
 Jobs
+
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="resume.html">
-Resume
+<a class="nav-link"
+href="hustles.html">
+
+Side Hustles
+
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="career.html">
-Career
+<a class="nav-link"
+href="resume.html">
+
+Resume Builder
+
 </a>
 </li>
 
 <li class="nav-item">
-<a class="nav-link active"
+<a class="nav-link"
+href="career.html">
+
+Career Guidance
+
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
 href="contact.html">
 
 Contact
@@ -97,6 +131,13 @@ Contact
 </div>
 
 </nav>
+
+<!-- NAVBAR SPACE -->
+
+<div style="height:90px;"></div>
+```
+
+<div style="height:90px;"></div>
 
 <!-- HERO -->
 
@@ -154,6 +195,8 @@ support@skillbridge.com
 </p>
 
 </div>
+
+<div class="contact-item">
 
 <h5>Location</h5>
 
@@ -337,7 +380,8 @@ Yes, internship and job opportunities are available.
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
 
-<script src="js/contact.js"></script>
+<script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
